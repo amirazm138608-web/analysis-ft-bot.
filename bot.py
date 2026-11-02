@@ -20,6 +20,7 @@ DIGEST_HOUR = 23           # nightly digest time (hour)
 DIGEST_MINUTE = 0          # nightly digest time (minute)
 DAILY_LIMIT = 95           # max API-Football requests per day (free plan: 100)
 STATE_FILE = "state.json"
+FOOTER = "با ما همواره فوتبالی باش👇😉\n🆔 : @AnalysisFT  |  #BOT ✔️"   # added at the bottom of match posts
 # -------------------------------------------------------------------
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
@@ -73,6 +74,19 @@ TEAM_NAMES = {
     "Olympiacos": "المپیاکوس",
 }
 
+# Persian player names (for the goal scorer line). Names not listed show in English
+# exactly as the data provider writes them. Add lines in the same format.
+PLAYER_NAMES = {
+    "L. Messi": "لیونل مسی", "Cristiano Ronaldo": "کریستیانو رونالدو",
+    "E. Haaland": "ارلینگ هالند", "K. Mbappé": "کیلیان امباپه", "K. Mbappe": "کیلیان امباپه",
+    "M. Salah": "محمد صلاح", "H. Kane": "هری کین", "R. Lewandowski": "روبرت لواندوفسکی",
+    "Vinícius Júnior": "وینیسیوس جونیور", "Vinicius Junior": "وینیسیوس جونیور",
+    "J. Bellingham": "جود بلینگام", "L. Yamal": "لامین یامال", "Raphinha": "رافینیا",
+    "B. Saka": "بوکایو ساکا", "P. Foden": "فیل فودن", "Bruno Fernandes": "برونو فرناندش",
+    "L. Martínez": "لائوتارو مارتینس", "O. Dembélé": "عثمان دمبله",
+    "R. Leão": "رافائل لیائو", "V. Osimhen": "ویکتور اوسیمن",
+}
+
 _FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 
 
@@ -86,6 +100,10 @@ def esc(text):
 
 def tname(name):
     return TEAM_NAMES.get(name, name)
+
+
+def pname(name):
+    return PLAYER_NAMES.get(name, name)
 
 DEFAULT_STATE = {
     "offset": 0,
@@ -251,6 +269,36 @@ def should_poll(now):
     return False
 
 
+def budget_left():
+    usage = STATE["usage"]
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    used = usage.get("n", 0) if usage.get("date") == today else 0
+    return DAILY_LIMIT - used
+
+
+def goal_lines(fid, count):
+    """One line per new goal: scorer + minute. Empty list if unavailable."""
+    if budget_left() < 15:   # keep a reserve for live checks
+        return []
+    data = api(f"/fixtures/events?fixture={fid}")
+    if not data:
+        return []
+    goals = [
+        e for e in data.get("response", [])
+        if e.get("type") == "Goal" and e.get("detail") != "Missed Penalty"
+    ]
+    lines = []
+    for e in goals[-count:]:
+        t = e.get("time", {})
+        minute = str(t.get("elapsed") or "")
+        if t.get("extra"):
+            minute += f"+{t['extra']}"
+        name = esc(pname((e.get("player") or {}).get("name") or "؟"))
+        note = {"Own Goal": " (گل به خودی)", "Penalty": " (پنالتی)"}.get(e.get("detail"), "")
+        lines.append(f"⚽️ {name}{note} {fa(minute)}'")
+    return lines
+
+
 def mark_done(fid):
     for m in STATE["schedule"].get("matches", []):
         if str(m["id"]) == str(fid):
@@ -267,10 +315,10 @@ def fmt(m, quote, extra=""):
     > minute (as a Telegram quote)
     🔹️ home score - score away
     """
-    text = f"🔴 {esc(m['league'])}\n<blockquote>{esc(quote)}</blockquote>\n🔹️{score_line(m)}"
+    text = f"🔴 {esc(m['league'])}\n" + (f"<blockquote>{esc(quote)}</blockquote>\n" if quote else "") + f"🔹️{score_line(m)}"
     if extra:
         text += "\n" + extra
-    return text
+    return text + "\n\n" + FOOTER
 
 
 def finish(fid, old):
@@ -326,10 +374,15 @@ def poll_live(now):
         else:
             m["since"] = old.get("since", now)
             if (m["h"], m["a"]) != (old["h"], old["a"]):
-                quote = f"دقیقه {fa(m['minute'] or 0)}"
-                if m["h"] + m["a"] <= old["h"] + old["a"]:
-                    quote += " - اصلاح نتیجه"
-                send(fmt(m, quote))
+                diff = m["h"] + m["a"] - old["h"] - old["a"]
+                lines = goal_lines(fid, diff) if diff > 0 else []
+                if lines:
+                    send(fmt(m, "", "<blockquote>" + "\n".join(lines) + "</blockquote>"))
+                else:
+                    quote = f"دقیقه {fa(m['minute'] or 0)}"
+                    if diff <= 0:
+                        quote += " - اصلاح نتیجه"
+                    send(fmt(m, quote))
         STATE["live"][fid] = m
 
     for fid in [k for k in STATE["live"] if k not in current]:
