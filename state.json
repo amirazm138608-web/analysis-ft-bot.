@@ -2,14 +2,17 @@
  "digest_date": "",
  "last_poll": 0,
  "live": {},
- "offset": 0,
- "posts": [],
+ "offset": 883795597,
+ "posts": [
+  "تکنولوژیا",
+  "اولین ایرانی که بات برای چنل گذاشت🔥"
+ ],
  "schedule": {},
  "sent_ids": [
   8652
  ],
  "usage": {
   "date": "2026-11-02",
-  "n": 1
+  "n": 2
  }
 }
