@@ -2,7 +2,7 @@
  "digest_date": "2026-11-02",
  "last_poll": 0,
  "live": {},
- "offset": 883795600,
+ "offset": 883795601,
  "posts": [],
  "schedule": {},
  "sent_ids": [
@@ -12,6 +12,6 @@
  ],
  "usage": {
   "date": "2026-11-02",
-  "n": 11
+  "n": 12
  }
 }
