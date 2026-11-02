@@ -1,35 +1,7 @@
 {
  "digest_date": "2026-11-02",
- "last_poll": 1793654778.269447,
- "live": {
-  "1550178": {
-   "a": 3,
-   "away": "Parma",
-   "h": 0,
-   "home": "Atalanta",
-   "league": "سری آ",
-   "minute": 83,
-   "since": 1793654778.269447
-  },
-  "1557455": {
-   "a": 1,
-   "away": "Everton",
-   "h": 0,
-   "home": "Newcastle",
-   "league": "لیگ برتر انگلیس",
-   "minute": 68,
-   "since": 1793654778.269447
-  },
-  "1570436": {
-   "a": 1,
-   "away": "Osasuna",
-   "h": 1,
-   "home": "Deportivo La Coruna",
-   "league": "لالیگا",
-   "minute": 65,
-   "since": 1793654778.269447
-  }
- },
+ "last_poll": 1793657288.337472,
+ "live": {},
  "offset": 883795601,
  "posts": [],
  "schedule": {
@@ -41,17 +13,17 @@
     "kickoff": 1793640600
    },
    {
-    "done": false,
+    "done": true,
     "id": 1550178,
     "kickoff": 1793648700
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557455,
     "kickoff": 1793649600
    },
    {
-    "done": false,
+    "done": true,
     "id": 1570436,
     "kickoff": 1793649600
    }
@@ -63,10 +35,13 @@
   8660,
   8661,
   8662,
-  8663
+  8663,
+  8664,
+  8665,
+  8666
  ],
  "usage": {
   "date": "2026-11-02",
-  "n": 14
+  "n": 18
  }
 }
