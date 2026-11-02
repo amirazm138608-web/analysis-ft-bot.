@@ -1,4 +1,5 @@
 """Analysis FT bot: live football results + nightly digest of the channel's headlines."""
+import html
 import json
 import os
 import urllib.error
@@ -27,6 +28,64 @@ CHANNEL = os.environ.get("CHANNEL", "").strip()
 
 FINISHED = {"FT", "AET", "PEN"}
 DEAD = {"PST", "CANC", "ABD", "AWD", "WO"}
+
+# Persian team names. Teams not listed here show with their English name;
+# add more lines in the same format: "English name": "نام فارسی",
+TEAM_NAMES = {
+    # England
+    "Arsenal": "آرسنال", "Aston Villa": "استون ویلا", "Bournemouth": "بورنموث",
+    "Brentford": "برنتفورد", "Brighton": "برایتون", "Brighton & Hove Albion": "برایتون",
+    "Chelsea": "چلسی", "Crystal Palace": "کریستال پالاس", "Everton": "اورتون",
+    "Fulham": "فولام", "Ipswich": "ایپسویچ", "Leicester": "لستر", "Liverpool": "لیورپول",
+    "Manchester City": "منچستر سیتی", "Manchester United": "منچستر یونایتد",
+    "Newcastle": "نیوکاسل", "Newcastle United": "نیوکاسل",
+    "Nottingham Forest": "ناتینگهام فارست", "Southampton": "ساوتهمپتون",
+    "Tottenham": "تاتنهام", "West Ham": "وستهام", "Wolves": "ولوز",
+    "Wolverhampton Wanderers": "ولوز", "Leeds": "لیدز", "Burnley": "برنلی",
+    "Sunderland": "ساندرلند",
+    # Spain
+    "Real Madrid": "رئال مادرید", "Barcelona": "بارسلونا",
+    "Atletico Madrid": "اتلتیکو مادرید", "Atlético Madrid": "اتلتیکو مادرید",
+    "Sevilla": "سویا", "Real Sociedad": "رئال سوسیداد", "Real Betis": "رئال بتیس",
+    "Villarreal": "ویارئال", "Athletic Club": "اتلتیک بیلبائو", "Valencia": "والنسیا",
+    "Girona": "ژیرونا", "Osasuna": "اوساسونا", "Celta Vigo": "سلتاویگو",
+    "Getafe": "ختافه", "Rayo Vallecano": "رایو وایکانو", "Mallorca": "مایورکا",
+    "Alaves": "آلاوس", "Espanyol": "اسپانیول", "Las Palmas": "لاس پالماس",
+    "Levante": "لوانته", "Elche": "التچه", "Oviedo": "اوویدو",
+    # Italy
+    "Inter": "اینتر", "AC Milan": "میلان", "Juventus": "یوونتوس", "Napoli": "ناپولی",
+    "AS Roma": "رم", "Roma": "رم", "Lazio": "لاتزیو", "Atalanta": "آتالانتا",
+    "Fiorentina": "فیورنتینا", "Bologna": "بولونیا", "Torino": "تورینو",
+    "Genoa": "جنوا", "Udinese": "اودینزه", "Como": "کومو", "Cagliari": "کالیاری",
+    "Lecce": "لچه", "Parma": "پارما", "Verona": "ورونا", "Sassuolo": "ساسولو",
+    "Cremonese": "کرمونزه", "Pisa": "پیزا",
+    # Rest of Europe (Champions League)
+    "Bayern Munich": "بایرن مونیخ", "Bayern München": "بایرن مونیخ",
+    "Borussia Dortmund": "دورتموند", "Bayer Leverkusen": "لورکوزن",
+    "RB Leipzig": "لایپزیگ", "Eintracht Frankfurt": "آینتراخت فرانکفورت",
+    "Paris Saint Germain": "پاری سن ژرمن", "Paris Saint-Germain": "پاری سن ژرمن",
+    "Marseille": "مارسی", "Monaco": "موناکو", "Lille": "لیل", "Lyon": "لیون",
+    "Benfica": "بنفیکا", "FC Porto": "پورتو", "Porto": "پورتو",
+    "Sporting CP": "اسپورتینگ لیسبون", "Ajax": "آژاکس", "PSV Eindhoven": "پی‌اس‌وی",
+    "Feyenoord": "فاینورد", "Celtic": "سلتیک", "Club Brugge KV": "کلوب بروژ",
+    "Galatasaray": "گالاتاسرای", "Fenerbahce": "فنرباغچه",
+    "Shakhtar Donetsk": "شاختار دونتسک", "Red Bull Salzburg": "سالزبورگ",
+    "Olympiacos": "المپیاکوس",
+}
+
+_FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
+
+
+def fa(n):
+    return str(n).translate(_FA_DIGITS)
+
+
+def esc(text):
+    return html.escape(str(text), quote=False)
+
+
+def tname(name):
+    return TEAM_NAMES.get(name, name)
 
 DEFAULT_STATE = {
     "offset": 0,
@@ -60,7 +119,7 @@ def tg(method, **params):
 
 
 def send(text):
-    res = tg("sendMessage", chat_id=CHANNEL, text=text)
+    res = tg("sendMessage", chat_id=CHANNEL, text=text, parse_mode="HTML")
     mid = res["result"]["message_id"]
     STATE["sent_ids"] = (STATE["sent_ids"] + [mid])[-500:]
 
@@ -156,7 +215,7 @@ def digest(now_utc, now_local):
     heads = [h for h in (headline(p) for p in STATE["posts"]) if h]
     if heads:
         lines = ["📰 خلاصه‌ی خبرهای امروز", ""]
-        lines += [f"{i}. {h}" for i, h in enumerate(heads, 1)]
+        lines += [f"{i}. {esc(h)}" for i, h in enumerate(heads, 1)]
         for chunk in split_text("\n".join(lines)):
             send(chunk)
     STATE["posts"] = []
@@ -199,7 +258,19 @@ def mark_done(fid):
 
 
 def score_line(m):
-    return f"{m['home']} {m['h']} - {m['a']} {m['away']}"
+    return f"{esc(tname(m['home']))} {fa(m['h'])} - {fa(m['a'])} {esc(tname(m['away']))}"
+
+
+def fmt(m, quote, extra=""):
+    """Message template:
+    🔴 league
+    > minute (as a Telegram quote)
+    🔹️ home score - score away
+    """
+    text = f"🔴 {esc(m['league'])}\n<blockquote>{esc(quote)}</blockquote>\n🔹️{score_line(m)}"
+    if extra:
+        text += "\n" + extra
+    return text
 
 
 def finish(fid, old):
@@ -211,12 +282,11 @@ def finish(fid, old):
     if status in FINISHED:
         old["h"] = fx["goals"]["home"] or 0
         old["a"] = fx["goals"]["away"] or 0
-        text = f"🏁 پایان بازی\n\n{score_line(old)}"
+        extra = ""
         if status == "PEN":
             pen = fx["score"]["penalty"]
-            text += f"\nضربات پنالتی: {pen['home']} - {pen['away']}"
-        text += f"\n🏆 {old['league']}"
-        send(text)
+            extra = f"ضربات پنالتی: {fa(pen['home'] or 0)} - {fa(pen['away'] or 0)}"
+        send(fmt(old, "پایان بازی", extra))
         del STATE["live"][fid]
         mark_done(fid)
     elif status in DEAD:
@@ -249,16 +319,17 @@ def poll_live(now):
         old = STATE["live"].get(fid)
         if old is None:
             if m["h"] == 0 and m["a"] == 0 and (m["minute"] or 0) <= 10:
-                send(f"🟢 شروع بازی\n\n{m['home']} - {m['away']}\n🏆 {m['league']}")
+                send(fmt(m, "شروع بازی"))
             else:
-                send(f"🔴 بازی در جریان\n\n{score_line(m)}\n⏱ دقیقه {m['minute']}\n🏆 {m['league']}")
+                send(fmt(m, f"دقیقه {fa(m['minute'] or 0)}"))
             m["since"] = now
         else:
             m["since"] = old.get("since", now)
             if (m["h"], m["a"]) != (old["h"], old["a"]):
-                title = "⚽ گل!" if m["h"] + m["a"] > old["h"] + old["a"] else "🔄 اصلاح نتیجه"
-                minute = f"\n⏱ دقیقه {m['minute']}" if m["minute"] else ""
-                send(f"{title}\n\n{score_line(m)}{minute}\n🏆 {m['league']}")
+                quote = f"دقیقه {fa(m['minute'] or 0)}"
+                if m["h"] + m["a"] <= old["h"] + old["a"]:
+                    quote += " - اصلاح نتیجه"
+                send(fmt(m, quote))
         STATE["live"][fid] = m
 
     for fid in [k for k in STATE["live"] if k not in current]:
