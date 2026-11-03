@@ -5,27 +5,52 @@
  "offset": 883795601,
  "posts": [],
  "schedule": {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "matches": [
    {
-    "done": true,
-    "id": 1550185,
-    "kickoff": 1793640600
+    "done": false,
+    "id": 1635669,
+    "kickoff": 1793727900
    },
    {
-    "done": true,
-    "id": 1550178,
-    "kickoff": 1793648700
+    "done": false,
+    "id": 1635723,
+    "kickoff": 1793727900
    },
    {
-    "done": true,
-    "id": 1557455,
-    "kickoff": 1793649600
+    "done": false,
+    "id": 1635622,
+    "kickoff": 1793736000
    },
    {
-    "done": true,
-    "id": 1570436,
-    "kickoff": 1793649600
+    "done": false,
+    "id": 1635627,
+    "kickoff": 1793736000
+   },
+   {
+    "done": false,
+    "id": 1635640,
+    "kickoff": 1793736000
+   },
+   {
+    "done": false,
+    "id": 1635662,
+    "kickoff": 1793736000
+   },
+   {
+    "done": false,
+    "id": 1635677,
+    "kickoff": 1793736000
+   },
+   {
+    "done": false,
+    "id": 1635695,
+    "kickoff": 1793736000
+   },
+   {
+    "done": false,
+    "id": 1635746,
+    "kickoff": 1793736000
    }
   ]
  },
@@ -41,7 +66,7 @@
   8666
  ],
  "usage": {
-  "date": "2026-11-02",
-  "n": 18
+  "date": "2026-11-03",
+  "n": 1
  }
 }
