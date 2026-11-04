@@ -8,6 +8,18 @@ import urllib.request
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
+import re
+
+
+def has_news_hashtag(text):
+    # فقط پست‌هایی که هشتگ #اخبار دارند
+    return bool(re.search(r"#اخبار(?!\w)", text or ""))
+
+
+def clean_headline(text):
+    # خط اول پست، بدون هشتگ‌ها
+    first_line = (text or "").strip().split("\n")[0]
+    return re.sub(r"#\S+", "", first_line).strip()
 # ---------------- Settings (change here if needed) ----------------
 LEAGUES = {
     39: "لیگ برتر انگلیس",
@@ -213,13 +225,14 @@ def collect_posts(now_utc, now_local):
         if m.get("message_id") in STATE["sent_ids"]:
             continue
         text = (m.get("text") or m.get("caption") or "").strip()
-        if text:
+        if text and has_news_hashtag(text):
             STATE["posts"].append(text)
 
 
 def headline(text):
     for line in text.splitlines():
         line = line.strip()
+        line = re.sub(r"#\S+", "", line).strip()
         if line:
             return line[:120] + ("…" if len(line) > 120 else "")
     return ""
