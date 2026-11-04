@@ -1,50 +1,50 @@
 {
  "digest_date": "2026-11-04",
- "last_poll": 1793825306.44087,
+ "last_poll": 1793828070.310868,
  "live": {
   "1635651": {
-   "a": 0,
+   "a": 1,
    "away": "Real Betis",
-   "h": 0,
+   "h": 1,
    "home": "Borussia Dortmund",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 45,
+   "minute": 72,
    "since": 1793825306.44087
   },
   "1635656": {
    "a": 1,
    "away": "Napoli",
-   "h": 1,
+   "h": 2,
    "home": "FC Porto",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 45,
+   "minute": 75,
    "since": 1793825306.44087
   },
   "1635681": {
-   "a": 3,
+   "a": 8,
    "away": "Como",
-   "h": 0,
+   "h": 1,
    "home": "Lens",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 45,
+   "minute": 73,
    "since": 1793825306.44087
   },
   "1635707": {
-   "a": 1,
+   "a": 2,
    "away": "Club Brugge KV",
-   "h": 0,
+   "h": 1,
    "home": "PSV Eindhoven",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 45,
+   "minute": 74,
    "since": 1793825306.44087
   },
   "1635710": {
-   "a": 1,
+   "a": 2,
    "away": "Manchester City",
-   "h": 0,
+   "h": 2,
    "home": "RB Leipzig",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 45,
+   "minute": 75,
    "since": 1793825306.44087
   },
   "1635726": {
@@ -53,20 +53,20 @@
    "h": 0,
    "home": "Slavia Praha",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 45,
+   "minute": 76,
    "since": 1793825306.44087
   },
   "1635745": {
    "a": 1,
    "away": "Sabah FA",
-   "h": 1,
+   "h": 2,
    "home": "Viking",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 45,
+   "minute": 75,
    "since": 1793825306.44087
   }
  },
- "offset": 883795686,
+ "offset": 883795691,
  "posts": [],
  "schedule": {
   "date": "2026-11-04",
@@ -168,10 +168,16 @@
   8789,
   8790,
   8791,
-  8792
+  8792,
+  8798,
+  8799,
+  8800,
+  8801,
+  8802,
+  8803
  ],
  "usage": {
   "date": "2026-11-04",
-  "n": 9
+  "n": 16
  }
 }
