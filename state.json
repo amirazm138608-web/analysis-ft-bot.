@@ -21,52 +21,52 @@
   "🔴آموریم با برد چند روز پیش مقابل اینتر و کریک با برد مقابل رم فعلا موندنی شدن"
  ],
  "schedule": {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "matches": [
    {
-    "done": true,
-    "id": 1635669,
-    "kickoff": 1793727900
+    "done": false,
+    "id": 1635606,
+    "kickoff": 1793814300
    },
    {
-    "done": true,
-    "id": 1635723,
-    "kickoff": 1793727900
+    "done": false,
+    "id": 1635658,
+    "kickoff": 1793814300
    },
    {
-    "done": true,
-    "id": 1635622,
-    "kickoff": 1793736000
+    "done": false,
+    "id": 1635651,
+    "kickoff": 1793822400
    },
    {
-    "done": true,
-    "id": 1635627,
-    "kickoff": 1793736000
+    "done": false,
+    "id": 1635656,
+    "kickoff": 1793822400
    },
    {
-    "done": true,
-    "id": 1635640,
-    "kickoff": 1793736000
+    "done": false,
+    "id": 1635681,
+    "kickoff": 1793822400
    },
    {
-    "done": true,
-    "id": 1635662,
-    "kickoff": 1793736000
+    "done": false,
+    "id": 1635707,
+    "kickoff": 1793822400
    },
    {
-    "done": true,
-    "id": 1635677,
-    "kickoff": 1793736000
+    "done": false,
+    "id": 1635710,
+    "kickoff": 1793822400
    },
    {
-    "done": true,
-    "id": 1635695,
-    "kickoff": 1793736000
+    "done": false,
+    "id": 1635726,
+    "kickoff": 1793822400
    },
    {
-    "done": true,
-    "id": 1635746,
-    "kickoff": 1793736000
+    "done": false,
+    "id": 1635745,
+    "kickoff": 1793822400
    }
   ]
  },
@@ -108,7 +108,7 @@
   8734
  ],
  "usage": {
-  "date": "2026-11-03",
-  "n": 23
+  "date": "2026-11-04",
+  "n": 1
  }
 }
