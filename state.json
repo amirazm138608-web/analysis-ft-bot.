@@ -1,72 +1,8 @@
 {
  "digest_date": "2026-11-04",
- "last_poll": 1793828070.310868,
- "live": {
-  "1635651": {
-   "a": 1,
-   "away": "Real Betis",
-   "h": 1,
-   "home": "Borussia Dortmund",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 72,
-   "since": 1793825306.44087
-  },
-  "1635656": {
-   "a": 1,
-   "away": "Napoli",
-   "h": 2,
-   "home": "FC Porto",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 75,
-   "since": 1793825306.44087
-  },
-  "1635681": {
-   "a": 8,
-   "away": "Como",
-   "h": 1,
-   "home": "Lens",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 73,
-   "since": 1793825306.44087
-  },
-  "1635707": {
-   "a": 2,
-   "away": "Club Brugge KV",
-   "h": 1,
-   "home": "PSV Eindhoven",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 74,
-   "since": 1793825306.44087
-  },
-  "1635710": {
-   "a": 2,
-   "away": "Manchester City",
-   "h": 2,
-   "home": "RB Leipzig",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 75,
-   "since": 1793825306.44087
-  },
-  "1635726": {
-   "a": 2,
-   "away": "Arsenal",
-   "h": 0,
-   "home": "Slavia Praha",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 76,
-   "since": 1793825306.44087
-  },
-  "1635745": {
-   "a": 1,
-   "away": "Sabah FA",
-   "h": 2,
-   "home": "Viking",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 75,
-   "since": 1793825306.44087
-  }
- },
- "offset": 883795691,
+ "last_poll": 1793831013.317426,
+ "live": {},
+ "offset": 883795700,
  "posts": [],
  "schedule": {
   "date": "2026-11-04",
@@ -82,37 +18,37 @@
     "kickoff": 1793814300
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635651,
     "kickoff": 1793822400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635656,
     "kickoff": 1793822400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635681,
     "kickoff": 1793822400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635707,
     "kickoff": 1793822400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635710,
     "kickoff": 1793822400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635726,
     "kickoff": 1793822400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635745,
     "kickoff": 1793822400
    }
@@ -174,10 +110,17 @@
   8800,
   8801,
   8802,
-  8803
+  8803,
+  8813,
+  8814,
+  8815,
+  8816,
+  8817,
+  8818,
+  8819
  ],
  "usage": {
   "date": "2026-11-04",
-  "n": 16
+  "n": 24
  }
 }
