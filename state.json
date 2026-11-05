@@ -5,54 +5,8 @@
  "offset": 883795700,
  "posts": [],
  "schedule": {
-  "date": "2026-11-04",
-  "matches": [
-   {
-    "done": true,
-    "id": 1635606,
-    "kickoff": 1793814300
-   },
-   {
-    "done": true,
-    "id": 1635658,
-    "kickoff": 1793814300
-   },
-   {
-    "done": true,
-    "id": 1635651,
-    "kickoff": 1793822400
-   },
-   {
-    "done": true,
-    "id": 1635656,
-    "kickoff": 1793822400
-   },
-   {
-    "done": true,
-    "id": 1635681,
-    "kickoff": 1793822400
-   },
-   {
-    "done": true,
-    "id": 1635707,
-    "kickoff": 1793822400
-   },
-   {
-    "done": true,
-    "id": 1635710,
-    "kickoff": 1793822400
-   },
-   {
-    "done": true,
-    "id": 1635726,
-    "kickoff": 1793822400
-   },
-   {
-    "done": true,
-    "id": 1635745,
-    "kickoff": 1793822400
-   }
-  ]
+  "date": "2026-11-05",
+  "matches": []
  },
  "sent_ids": [
   8652,
@@ -120,7 +74,7 @@
   8819
  ],
  "usage": {
-  "date": "2026-11-04",
-  "n": 24
+  "date": "2026-11-05",
+  "n": 1
  }
 }
