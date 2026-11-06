@@ -5,8 +5,24 @@
  "offset": 883795707,
  "posts": [],
  "schedule": {
-  "date": "2026-11-05",
-  "matches": []
+  "date": "2026-11-06",
+  "matches": [
+   {
+    "done": false,
+    "id": 1550196,
+    "kickoff": 1793994300
+   },
+   {
+    "done": false,
+    "id": 1557460,
+    "kickoff": 1793995200
+   },
+   {
+    "done": false,
+    "id": 1570450,
+    "kickoff": 1793995200
+   }
+  ]
  },
  "sent_ids": [
   8652,
@@ -75,7 +91,7 @@
   8827
  ],
  "usage": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "n": 1
  }
 }
