@@ -1,52 +1,24 @@
 {
  "digest_date": "2026-11-06",
- "last_poll": 1794000964.562799,
- "live": {
-  "1550196": {
-   "a": 1,
-   "away": "Udinese",
-   "h": 2,
-   "home": "Venezia",
-   "league": "سری آ",
-   "minute": 90,
-   "since": 1793996065.61618
-  },
-  "1557460": {
-   "a": 1,
-   "away": "Coventry",
-   "h": 2,
-   "home": "Everton",
-   "league": "لیگ برتر انگلیس",
-   "minute": 78,
-   "since": 1793996065.61618
-  },
-  "1570450": {
-   "a": 0,
-   "away": "Alaves",
-   "h": 0,
-   "home": "Sevilla",
-   "league": "لالیگا",
-   "minute": 74,
-   "since": 1793996065.61618
-  }
- },
+ "last_poll": 1794003521.188005,
+ "live": {},
  "offset": 883795722,
  "posts": [],
  "schedule": {
   "date": "2026-11-06",
   "matches": [
    {
-    "done": false,
+    "done": true,
     "id": 1550196,
     "kickoff": 1793994300
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557460,
     "kickoff": 1793995200
    },
    {
-    "done": false,
+    "done": true,
     "id": 1570450,
     "kickoff": 1793995200
    }
@@ -123,10 +95,13 @@
   8846,
   8847,
   8848,
-  8849
+  8849,
+  8850,
+  8851,
+  8852
  ],
  "usage": {
   "date": "2026-11-06",
-  "n": 7
+  "n": 11
  }
 }
