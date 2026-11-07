@@ -1,14 +1,14 @@
 {
  "digest_date": "2026-11-06",
- "last_poll": 1794061186.551666,
+ "last_poll": 1794063550.446583,
  "live": {
   "1550188": {
    "a": 0,
    "away": "Frosinone",
-   "h": 0,
+   "h": 1,
    "home": "Cagliari",
    "league": "سری آ",
-   "minute": 18,
+   "minute": 45,
    "since": 1794061186.551666
   },
   "1550195": {
@@ -17,40 +17,22 @@
    "h": 0,
    "home": "Torino",
    "league": "سری آ",
-   "minute": 3,
+   "minute": 43,
    "since": 1794061186.551666
-  },
-  "1557463": {
-   "a": 0,
-   "away": "Tottenham",
-   "h": 1,
-   "home": "Leeds",
-   "league": "لیگ برتر انگلیس",
-   "minute": 88,
-   "since": 1794055226.075995
-  },
-  "1570447": {
-   "a": 1,
-   "away": "Racing Santander",
-   "h": 1,
-   "home": "Malaga",
-   "league": "لالیگا",
-   "minute": 59,
-   "since": 1794058461.93481
   }
  },
- "offset": 883795724,
+ "offset": 883795725,
  "posts": [],
  "schedule": {
   "date": "2026-11-07",
   "matches": [
    {
-    "done": false,
+    "done": true,
     "id": 1557463,
     "kickoff": 1794054600
    },
    {
-    "done": false,
+    "done": true,
     "id": 1570447,
     "kickoff": 1794056400
    },
@@ -186,10 +168,13 @@
   8857,
   8858,
   8859,
-  8860
+  8860,
+  8862,
+  8863,
+  8864
  ],
  "usage": {
   "date": "2026-11-07",
-  "n": 6
+  "n": 10
  }
 }
