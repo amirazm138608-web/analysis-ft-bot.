@@ -1,36 +1,18 @@
 {
  "digest_date": "2026-11-06",
- "last_poll": 1794070344.082393,
+ "last_poll": 1794072207.116673,
  "live": {
-  "1557457": {
+  "1550194": {
    "a": 0,
-   "away": "Hull City",
-   "h": 1,
-   "home": "Arsenal",
-   "league": "لیگ برتر انگلیس",
-   "minute": 90,
-   "since": 1794065610.588646
-  },
-  "1557461": {
-   "a": 1,
-   "away": "Newcastle",
-   "h": 1,
-   "home": "Fulham",
-   "league": "لیگ برتر انگلیس",
-   "minute": 90,
-   "since": 1794065610.588646
-  },
-  "1570446": {
-   "a": 0,
-   "away": "Deportivo La Coruna",
+   "away": "Bologna",
    "h": 0,
-   "home": "Espanyol",
-   "league": "لالیگا",
-   "minute": 77,
-   "since": 1794065610.588646
+   "home": "Parma",
+   "league": "سری آ",
+   "minute": 22,
+   "since": 1794072207.116673
   }
  },
- "offset": 883795727,
+ "offset": 883795728,
  "posts": [],
  "schedule": {
   "date": "2026-11-07",
@@ -56,17 +38,17 @@
     "kickoff": 1794060000
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557457,
     "kickoff": 1794063600
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557461,
     "kickoff": 1794063600
    },
    {
-    "done": false,
+    "done": true,
     "id": 1570446,
     "kickoff": 1794064500
    },
@@ -187,10 +169,14 @@
   8868,
   8869,
   8872,
-  8873
+  8873,
+  8875,
+  8876,
+  8877,
+  8878
  ],
  "usage": {
   "date": "2026-11-07",
-  "n": 17
+  "n": 21
  }
 }
