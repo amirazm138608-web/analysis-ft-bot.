@@ -1,23 +1,41 @@
 {
  "digest_date": "2026-11-06",
- "last_poll": 1794058461.93481,
+ "last_poll": 1794061186.551666,
  "live": {
+  "1550188": {
+   "a": 0,
+   "away": "Frosinone",
+   "h": 0,
+   "home": "Cagliari",
+   "league": "سری آ",
+   "minute": 18,
+   "since": 1794061186.551666
+  },
+  "1550195": {
+   "a": 0,
+   "away": "Lecce",
+   "h": 0,
+   "home": "Torino",
+   "league": "سری آ",
+   "minute": 3,
+   "since": 1794061186.551666
+  },
   "1557463": {
    "a": 0,
    "away": "Tottenham",
-   "h": 0,
+   "h": 1,
    "home": "Leeds",
    "league": "لیگ برتر انگلیس",
-   "minute": 45,
+   "minute": 88,
    "since": 1794055226.075995
   },
   "1570447": {
-   "a": 0,
+   "a": 1,
    "away": "Racing Santander",
    "h": 1,
    "home": "Malaga",
    "league": "لالیگا",
-   "minute": 34,
+   "minute": 59,
    "since": 1794058461.93481
   }
  },
@@ -164,10 +182,14 @@
   8851,
   8852,
   8855,
-  8856
+  8856,
+  8857,
+  8858,
+  8859,
+  8860
  ],
  "usage": {
   "date": "2026-11-07",
-  "n": 3
+  "n": 6
  }
 }
