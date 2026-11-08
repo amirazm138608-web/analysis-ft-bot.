@@ -1,6 +1,6 @@
 {
  "digest_date": "2026-11-07",
- "last_poll": 1794149941.71114,
+ "last_poll": 1794151822.412855,
  "live": {
   "1550190": {
    "a": 2,
@@ -8,16 +8,16 @@
    "h": 0,
    "home": "Genoa",
    "league": "سری آ",
-   "minute": 45,
+   "minute": 71,
    "since": 1794147742.117137
   },
   "1550192": {
-   "a": 0,
+   "a": 1,
    "away": "Atalanta",
    "h": 0,
    "home": "Monza",
    "league": "سری آ",
-   "minute": 45,
+   "minute": 71,
    "since": 1794147742.117137
   },
   "1557458": {
@@ -26,25 +26,25 @@
    "h": 2,
    "home": "Brighton",
    "league": "لیگ برتر انگلیس",
-   "minute": 45,
+   "minute": 69,
    "since": 1794147742.117137
   },
   "1557459": {
-   "a": 1,
+   "a": 2,
    "away": "Liverpool",
    "h": 0,
    "home": "Crystal Palace",
    "league": "لیگ برتر انگلیس",
-   "minute": 45,
+   "minute": 70,
    "since": 1794147742.117137
   },
   "1557462": {
-   "a": 1,
+   "a": 2,
    "away": "Bournemouth",
    "h": 0,
    "home": "Ipswich",
    "league": "لیگ برتر انگلیس",
-   "minute": 45,
+   "minute": 73,
    "since": 1794147742.117137
   },
   "1557466": {
@@ -53,8 +53,17 @@
    "h": 1,
    "home": "Sunderland",
    "league": "لیگ برتر انگلیس",
-   "minute": 45,
+   "minute": 66,
    "since": 1794147742.117137
+  },
+  "1570449": {
+   "a": 0,
+   "away": "Rayo Vallecano",
+   "h": 0,
+   "home": "Real Sociedad",
+   "league": "لالیگا",
+   "minute": 12,
+   "since": 1794151822.412855
   }
  },
  "offset": 883795747,
@@ -266,10 +275,14 @@
   8925,
   8926,
   8927,
-  8928
+  8928,
+  8929,
+  8930,
+  8931,
+  8932
  ],
  "usage": {
   "date": "2026-11-08",
-  "n": 13
+  "n": 17
  }
 }
