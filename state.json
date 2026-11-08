@@ -5,67 +5,82 @@
  "offset": 883795739,
  "posts": [],
  "schedule": {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "matches": [
    {
-    "done": true,
-    "id": 1557463,
-    "kickoff": 1794054600
+    "done": false,
+    "id": 1550193,
+    "kickoff": 1794137400
    },
    {
-    "done": true,
-    "id": 1570447,
-    "kickoff": 1794056400
+    "done": false,
+    "id": 1570445,
+    "kickoff": 1794142800
    },
    {
-    "done": true,
-    "id": 1550188,
-    "kickoff": 1794060000
+    "done": false,
+    "id": 1550190,
+    "kickoff": 1794146400
    },
    {
-    "done": true,
-    "id": 1550195,
-    "kickoff": 1794060000
+    "done": false,
+    "id": 1550192,
+    "kickoff": 1794146400
    },
    {
-    "done": true,
-    "id": 1557457,
-    "kickoff": 1794063600
+    "done": false,
+    "id": 1557458,
+    "kickoff": 1794146400
    },
    {
-    "done": true,
-    "id": 1557461,
-    "kickoff": 1794063600
+    "done": false,
+    "id": 1557459,
+    "kickoff": 1794146400
    },
    {
-    "done": true,
-    "id": 1570446,
-    "kickoff": 1794064500
+    "done": false,
+    "id": 1557462,
+    "kickoff": 1794146400
    },
    {
-    "done": true,
-    "id": 1550194,
-    "kickoff": 1794070800
+    "done": false,
+    "id": 1557466,
+    "kickoff": 1794146400
    },
    {
-    "done": true,
-    "id": 1557465,
-    "kickoff": 1794072600
+    "done": false,
+    "id": 1570449,
+    "kickoff": 1794150900
    },
    {
-    "done": true,
-    "id": 1570448,
-    "kickoff": 1794072600
+    "done": false,
+    "id": 1557464,
+    "kickoff": 1794155400
    },
    {
-    "done": true,
-    "id": 1550187,
-    "kickoff": 1794080700
+    "done": false,
+    "id": 1550191,
+    "kickoff": 1794157200
    },
    {
-    "done": true,
-    "id": 1570451,
-    "kickoff": 1794081600
+    "done": false,
+    "id": 1570444,
+    "kickoff": 1794159000
+   },
+   {
+    "done": false,
+    "id": 1570452,
+    "kickoff": 1794159000
+   },
+   {
+    "done": false,
+    "id": 1550189,
+    "kickoff": 1794167100
+   },
+   {
+    "done": false,
+    "id": 1570443,
+    "kickoff": 1794168000
    }
   ]
  },
@@ -183,7 +198,7 @@
   8906
  ],
  "usage": {
-  "date": "2026-11-07",
-  "n": 41
+  "date": "2026-11-08",
+  "n": 1
  }
 }
