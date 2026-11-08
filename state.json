@@ -1,68 +1,14 @@
 {
  "digest_date": "2026-11-07",
- "last_poll": 1794151822.412855,
+ "last_poll": 1794154165.617987,
  "live": {
-  "1550190": {
-   "a": 2,
-   "away": "AC Milan",
-   "h": 0,
-   "home": "Genoa",
-   "league": "سری آ",
-   "minute": 71,
-   "since": 1794147742.117137
-  },
-  "1550192": {
-   "a": 1,
-   "away": "Atalanta",
-   "h": 0,
-   "home": "Monza",
-   "league": "سری آ",
-   "minute": 71,
-   "since": 1794147742.117137
-  },
-  "1557458": {
-   "a": 0,
-   "away": "Brentford",
-   "h": 2,
-   "home": "Brighton",
-   "league": "لیگ برتر انگلیس",
-   "minute": 69,
-   "since": 1794147742.117137
-  },
-  "1557459": {
-   "a": 2,
-   "away": "Liverpool",
-   "h": 0,
-   "home": "Crystal Palace",
-   "league": "لیگ برتر انگلیس",
-   "minute": 70,
-   "since": 1794147742.117137
-  },
-  "1557462": {
-   "a": 2,
-   "away": "Bournemouth",
-   "h": 0,
-   "home": "Ipswich",
-   "league": "لیگ برتر انگلیس",
-   "minute": 73,
-   "since": 1794147742.117137
-  },
-  "1557466": {
-   "a": 0,
-   "away": "Chelsea",
-   "h": 1,
-   "home": "Sunderland",
-   "league": "لیگ برتر انگلیس",
-   "minute": 66,
-   "since": 1794147742.117137
-  },
   "1570449": {
    "a": 0,
    "away": "Rayo Vallecano",
    "h": 0,
    "home": "Real Sociedad",
    "league": "لالیگا",
-   "minute": 12,
+   "minute": 45,
    "since": 1794151822.412855
   }
  },
@@ -84,32 +30,32 @@
     "kickoff": 1794142800
    },
    {
-    "done": false,
+    "done": true,
     "id": 1550190,
     "kickoff": 1794146400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1550192,
     "kickoff": 1794146400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557458,
     "kickoff": 1794146400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557459,
     "kickoff": 1794146400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557462,
     "kickoff": 1794146400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557466,
     "kickoff": 1794146400
    },
@@ -279,10 +225,16 @@
   8929,
   8930,
   8931,
-  8932
+  8932,
+  8933,
+  8934,
+  8935,
+  8936,
+  8937,
+  8938
  ],
  "usage": {
   "date": "2026-11-08",
-  "n": 17
+  "n": 24
  }
 }
