@@ -1,24 +1,14 @@
 {
  "digest_date": "2026-11-20",
- "last_poll": 1795209424.585405,
- "live": {
-  "1570454": {
-   "a": 0,
-   "away": "Espanyol",
-   "h": 0,
-   "home": "Athletic Club",
-   "league": "لالیگا",
-   "minute": 58,
-   "since": 1795206421.474275
-  }
- },
+ "last_poll": 1795212470.037093,
+ "live": {},
  "offset": 883795859,
  "posts": [],
  "schedule": {
   "date": "2026-11-20",
   "matches": [
    {
-    "done": false,
+    "done": true,
     "id": 1570454,
     "kickoff": 1795204800
    }
@@ -194,10 +184,11 @@
   9078,
   9082,
   9084,
-  9085
+  9085,
+  9086
  ],
  "usage": {
   "date": "2026-11-20",
-  "n": 3
+  "n": 5
  }
 }
