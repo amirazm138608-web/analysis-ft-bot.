@@ -1,26 +1,7 @@
 {
  "digest_date": "2026-11-21",
- "last_poll": 1795296276.201764,
- "live": {
-  "1550204": {
-   "a": 0,
-   "away": "Torino",
-   "h": 1,
-   "home": "Napoli",
-   "league": "سری آ",
-   "minute": 81,
-   "since": 1795291773.866197
-  },
-  "1570461": {
-   "a": 1,
-   "away": "Celta Vigo",
-   "h": 0,
-   "home": "Real Madrid",
-   "league": "لالیگا",
-   "minute": 58,
-   "since": 1795291773.866197
-  }
- },
+ "last_poll": 1795298827.944442,
+ "live": {},
  "offset": 883795880,
  "posts": [],
  "schedule": {
@@ -92,12 +73,12 @@
     "kickoff": 1795282200
    },
    {
-    "done": false,
+    "done": true,
     "id": 1550204,
     "kickoff": 1795290300
    },
    {
-    "done": false,
+    "done": true,
     "id": 1570461,
     "kickoff": 1795291200
    }
@@ -322,10 +303,12 @@
   9152,
   9153,
   9154,
-  9155
+  9155,
+  9156,
+  9157
  ],
  "usage": {
   "date": "2026-11-21",
-  "n": 45
+  "n": 48
  }
 }
