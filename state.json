@@ -1,33 +1,78 @@
 {
  "digest_date": "2026-11-20",
- "last_poll": 1795273243.073626,
+ "last_poll": 1795275857.718011,
  "live": {
   "1550200": {
    "a": 0,
    "away": "Cagliari",
-   "h": 1,
+   "h": 2,
    "home": "Como",
    "league": "سری آ",
-   "minute": 45,
+   "minute": 82,
    "since": 1795270409.115881
   },
   "1550202": {
    "a": 0,
    "away": "Lecce",
-   "h": 1,
+   "h": 2,
    "home": "Lazio",
    "league": "سری آ",
-   "minute": 45,
+   "minute": 88,
    "since": 1795270409.115881
   },
-  "1557471": {
+  "1557467": {
    "a": 0,
-   "away": "Crystal Palace",
+   "away": "Sunderland",
    "h": 0,
+   "home": "Aston Villa",
+   "league": "لیگ برتر انگلیس",
+   "minute": 44,
+   "since": 1795275857.718011
+  },
+  "1557468": {
+   "a": 0,
+   "away": "Nottingham Forest",
+   "h": 1,
+   "home": "Bournemouth",
+   "league": "لیگ برتر انگلیس",
+   "minute": 45,
+   "since": 1795275857.718011
+  },
+  "1557470": {
+   "a": 1,
+   "away": "Leeds",
+   "h": 1,
+   "home": "Chelsea",
+   "league": "لیگ برتر انگلیس",
+   "minute": 44,
+   "since": 1795275857.718011
+  },
+  "1557471": {
+   "a": 1,
+   "away": "Crystal Palace",
+   "h": 2,
    "home": "Coventry",
    "league": "لیگ برتر انگلیس",
-   "minute": 1,
+   "minute": 44,
    "since": 1795273243.073626
+  },
+  "1557476": {
+   "a": 0,
+   "away": "Ipswich",
+   "h": 1,
+   "home": "Tottenham",
+   "league": "لیگ برتر انگلیس",
+   "minute": 44,
+   "since": 1795275857.718011
+  },
+  "1570460": {
+   "a": 0,
+   "away": "Valencia",
+   "h": 0,
+   "home": "Rayo Vallecano",
+   "league": "لالیگا",
+   "minute": 27,
+   "since": 1795275857.718011
   }
  },
  "offset": 883795862,
@@ -296,10 +341,18 @@
   9097,
   9098,
   9099,
-  9100
+  9100,
+  9101,
+  9102,
+  9103,
+  9104,
+  9105,
+  9106,
+  9107,
+  9108
  ],
  "usage": {
   "date": "2026-11-21",
-  "n": 10
+  "n": 14
  }
 }
