@@ -5,82 +5,62 @@
  "offset": 883795880,
  "posts": [],
  "schedule": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "matches": [
    {
-    "done": true,
-    "id": 1557474,
-    "kickoff": 1795264200
+    "done": false,
+    "id": 1550201,
+    "kickoff": 1795347000
    },
    {
-    "done": true,
-    "id": 1570453,
-    "kickoff": 1795266000
+    "done": false,
+    "id": 1570455,
+    "kickoff": 1795352400
    },
    {
-    "done": true,
-    "id": 1550200,
-    "kickoff": 1795269600
+    "done": false,
+    "id": 1550199,
+    "kickoff": 1795356000
    },
    {
-    "done": true,
-    "id": 1550202,
-    "kickoff": 1795269600
+    "done": false,
+    "id": 1550206,
+    "kickoff": 1795356000
    },
    {
-    "done": true,
-    "id": 1557467,
-    "kickoff": 1795273200
+    "done": false,
+    "id": 1557472,
+    "kickoff": 1795356000
    },
    {
-    "done": true,
-    "id": 1557468,
-    "kickoff": 1795273200
+    "done": false,
+    "id": 1570459,
+    "kickoff": 1795360500
    },
    {
-    "done": true,
-    "id": 1557470,
-    "kickoff": 1795273200
+    "done": false,
+    "id": 1557473,
+    "kickoff": 1795365000
    },
    {
-    "done": true,
-    "id": 1557471,
-    "kickoff": 1795273200
+    "done": false,
+    "id": 1550197,
+    "kickoff": 1795366800
    },
    {
-    "done": true,
-    "id": 1557476,
-    "kickoff": 1795273200
+    "done": false,
+    "id": 1570458,
+    "kickoff": 1795368600
    },
    {
-    "done": true,
-    "id": 1570460,
-    "kickoff": 1795274100
+    "done": false,
+    "id": 1550198,
+    "kickoff": 1795376700
    },
    {
-    "done": true,
-    "id": 1550205,
-    "kickoff": 1795280400
-   },
-   {
-    "done": true,
-    "id": 1557475,
-    "kickoff": 1795282200
-   },
-   {
-    "done": true,
-    "id": 1570462,
-    "kickoff": 1795282200
-   },
-   {
-    "done": true,
-    "id": 1550204,
-    "kickoff": 1795290300
-   },
-   {
-    "done": true,
-    "id": 1570461,
-    "kickoff": 1795291200
+    "done": false,
+    "id": 1570456,
+    "kickoff": 1795377600
    }
   ]
  },
@@ -308,7 +288,7 @@
   9157
  ],
  "usage": {
-  "date": "2026-11-21",
-  "n": 48
+  "date": "2026-11-22",
+  "n": 1
  }
 }
