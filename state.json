@@ -1,41 +1,23 @@
 {
  "digest_date": "2026-11-21",
- "last_poll": 1795362727.776531,
+ "last_poll": 1795365062.863565,
  "live": {
-  "1550199": {
-   "a": 1,
-   "away": "Udinese",
-   "h": 1,
-   "home": "Bologna",
-   "league": "سری آ",
-   "minute": 90,
-   "since": 1795357352.169367
-  },
-  "1550206": {
-   "a": 2,
-   "away": "Genoa",
-   "h": 0,
-   "home": "Sassuolo",
-   "league": "سری آ",
-   "minute": 90,
-   "since": 1795357352.169367
-  },
-  "1557472": {
+  "1557473": {
    "a": 0,
-   "away": "Brighton",
+   "away": "Manchester United",
    "h": 0,
-   "home": "Hull City",
+   "home": "Liverpool",
    "league": "لیگ برتر انگلیس",
-   "minute": 90,
-   "since": 1795357352.169367
+   "minute": 1,
+   "since": 1795365062.863565
   },
   "1570459": {
-   "a": 0,
+   "a": 1,
    "away": "Real Sociedad",
    "h": 2,
    "home": "Racing Santander",
    "league": "لالیگا",
-   "minute": 37,
+   "minute": 57,
    "since": 1795362727.776531
   }
  },
@@ -57,17 +39,17 @@
     "kickoff": 1795352400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1550199,
     "kickoff": 1795356000
    },
    {
-    "done": false,
+    "done": true,
     "id": 1550206,
     "kickoff": 1795356000
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557472,
     "kickoff": 1795356000
    },
@@ -336,10 +318,15 @@
   9167,
   9168,
   9169,
-  9170
+  9170,
+  9171,
+  9172,
+  9173,
+  9174,
+  9175
  ],
  "usage": {
   "date": "2026-11-22",
-  "n": 13
+  "n": 18
  }
 }
