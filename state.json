@@ -1,52 +1,24 @@
 {
  "digest_date": "2026-11-23",
- "last_poll": 1795468888.179324,
- "live": {
-  "1550203": {
-   "a": 0,
-   "away": "Fiorentina",
-   "h": 3,
-   "home": "Monza",
-   "league": "سری آ",
-   "minute": 77,
-   "since": 1795465733.402815
-  },
-  "1557469": {
-   "a": 0,
-   "away": "Everton",
-   "h": 2,
-   "home": "Brentford",
-   "league": "لیگ برتر انگلیس",
-   "minute": 54,
-   "since": 1795465733.402815
-  },
-  "1570457": {
-   "a": 1,
-   "away": "Elche",
-   "h": 0,
-   "home": "Levante",
-   "league": "لالیگا",
-   "minute": 63,
-   "since": 1795465733.402815
-  }
- },
+ "last_poll": 1795472025.811701,
+ "live": {},
  "offset": 883795888,
  "posts": [],
  "schedule": {
   "date": "2026-11-23",
   "matches": [
    {
-    "done": false,
+    "done": true,
     "id": 1550203,
     "kickoff": 1795463100
    },
    {
-    "done": false,
+    "done": true,
     "id": 1557469,
     "kickoff": 1795464000
    },
    {
-    "done": false,
+    "done": true,
     "id": 1570457,
     "kickoff": 1795464000
    }
@@ -314,10 +286,13 @@
   9203,
   9204,
   9205,
-  9206
+  9206,
+  9207,
+  9208,
+  9209
  ],
  "usage": {
   "date": "2026-11-23",
-  "n": 6
+  "n": 10
  }
 }
