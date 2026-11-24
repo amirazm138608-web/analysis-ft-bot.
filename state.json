@@ -1,38 +1,83 @@
 {
  "digest_date": "2026-11-24",
- "last_poll": 1795548609.448105,
+ "last_poll": 1795551852.84925,
  "live": {
-  "1635641": {
+  "1635611": {
    "a": 0,
-   "away": "Lask Linz",
-   "h": 0,
-   "home": "Bodo/Glimt",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 89,
-   "since": 1795544875.602042
-  },
-  "1635667": {
-   "a": 0,
-   "away": "Aston Villa",
+   "away": "Borussia Dortmund",
    "h": 1,
-   "home": "Galatasaray",
+   "home": "Arsenal",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 89,
-   "since": 1795544875.602042
+   "minute": 24,
+   "since": 1795551852.84925
+  },
+  "1635649": {
+   "a": 0,
+   "away": "AEK Athens FC",
+   "h": 0,
+   "home": "Como",
+   "league": "لیگ قهرمانان اروپا",
+   "minute": 21,
+   "since": 1795551852.84925
+  },
+  "1635663": {
+   "a": 1,
+   "away": "FC Porto",
+   "h": 0,
+   "home": "Feyenoord",
+   "league": "لیگ قهرمانان اروپا",
+   "minute": 23,
+   "since": 1795551852.84925
+  },
+  "1635692": {
+   "a": 0,
+   "away": "Napoli",
+   "h": 0,
+   "home": "Manchester City",
+   "league": "لیگ قهرمانان اروپا",
+   "minute": 23,
+   "since": 1795551852.84925
+  },
+  "1635713": {
+   "a": 0,
+   "away": "Lens",
+   "h": 2,
+   "home": "RB Leipzig",
+   "league": "لیگ قهرمانان اروپا",
+   "minute": 24,
+   "since": 1795551852.84925
+  },
+  "1635715": {
+   "a": 0,
+   "away": "PSV Eindhoven",
+   "h": 0,
+   "home": "Real Madrid",
+   "league": "لیگ قهرمانان اروپا",
+   "minute": 24,
+   "since": 1795551852.84925
+  },
+  "1635731": {
+   "a": 0,
+   "away": "Real Betis",
+   "h": 0,
+   "home": "Slovan Bratislava",
+   "league": "لیگ قهرمانان اروپا",
+   "minute": 24,
+   "since": 1795551852.84925
   }
  },
- "offset": 883795889,
+ "offset": 883795895,
  "posts": [],
  "schedule": {
   "date": "2026-11-24",
   "matches": [
    {
-    "done": false,
+    "done": true,
     "id": 1635641,
     "kickoff": 1795542300
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635667,
     "kickoff": 1795542300
    },
@@ -341,10 +386,19 @@
   9209,
   9211,
   9212,
-  9213
+  9213,
+  9220,
+  9221,
+  9222,
+  9223,
+  9224,
+  9225,
+  9226,
+  9227,
+  9228
  ],
  "usage": {
   "date": "2026-11-24",
-  "n": 4
+  "n": 7
  }
 }
