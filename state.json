@@ -1,23 +1,23 @@
 {
  "digest_date": "2026-11-24",
- "last_poll": 1795551852.84925,
+ "last_poll": 1795555270.982163,
  "live": {
   "1635611": {
-   "a": 0,
+   "a": 1,
    "away": "Borussia Dortmund",
    "h": 1,
    "home": "Arsenal",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 24,
+   "minute": 65,
    "since": 1795551852.84925
   },
   "1635649": {
    "a": 0,
    "away": "AEK Athens FC",
-   "h": 0,
+   "h": 1,
    "home": "Como",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 21,
+   "minute": 60,
    "since": 1795551852.84925
   },
   "1635663": {
@@ -26,47 +26,47 @@
    "h": 0,
    "home": "Feyenoord",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 23,
+   "minute": 61,
    "since": 1795551852.84925
   },
   "1635692": {
-   "a": 0,
+   "a": 1,
    "away": "Napoli",
    "h": 0,
    "home": "Manchester City",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 23,
+   "minute": 64,
    "since": 1795551852.84925
   },
   "1635713": {
-   "a": 0,
+   "a": 1,
    "away": "Lens",
    "h": 2,
    "home": "RB Leipzig",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 24,
+   "minute": 65,
    "since": 1795551852.84925
   },
   "1635715": {
-   "a": 0,
+   "a": 1,
    "away": "PSV Eindhoven",
-   "h": 0,
+   "h": 2,
    "home": "Real Madrid",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 24,
+   "minute": 63,
    "since": 1795551852.84925
   },
   "1635731": {
-   "a": 0,
+   "a": 2,
    "away": "Real Betis",
    "h": 0,
    "home": "Slovan Bratislava",
    "league": "لیگ قهرمانان اروپا",
-   "minute": 24,
+   "minute": 65,
    "since": 1795551852.84925
   }
  },
- "offset": 883795895,
+ "offset": 883795914,
  "posts": [],
  "schedule": {
   "date": "2026-11-24",
@@ -395,10 +395,16 @@
   9225,
   9226,
   9227,
-  9228
+  9228,
+  9248,
+  9249,
+  9250,
+  9251,
+  9252,
+  9253
  ],
  "usage": {
   "date": "2026-11-24",
-  "n": 7
+  "n": 14
  }
 }
