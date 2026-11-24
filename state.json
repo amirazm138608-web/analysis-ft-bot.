@@ -1,72 +1,8 @@
 {
  "digest_date": "2026-11-24",
- "last_poll": 1795555270.982163,
- "live": {
-  "1635611": {
-   "a": 1,
-   "away": "Borussia Dortmund",
-   "h": 1,
-   "home": "Arsenal",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 65,
-   "since": 1795551852.84925
-  },
-  "1635649": {
-   "a": 0,
-   "away": "AEK Athens FC",
-   "h": 1,
-   "home": "Como",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 60,
-   "since": 1795551852.84925
-  },
-  "1635663": {
-   "a": 1,
-   "away": "FC Porto",
-   "h": 0,
-   "home": "Feyenoord",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 61,
-   "since": 1795551852.84925
-  },
-  "1635692": {
-   "a": 1,
-   "away": "Napoli",
-   "h": 0,
-   "home": "Manchester City",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 64,
-   "since": 1795551852.84925
-  },
-  "1635713": {
-   "a": 1,
-   "away": "Lens",
-   "h": 2,
-   "home": "RB Leipzig",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 65,
-   "since": 1795551852.84925
-  },
-  "1635715": {
-   "a": 1,
-   "away": "PSV Eindhoven",
-   "h": 2,
-   "home": "Real Madrid",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 63,
-   "since": 1795551852.84925
-  },
-  "1635731": {
-   "a": 2,
-   "away": "Real Betis",
-   "h": 0,
-   "home": "Slovan Bratislava",
-   "league": "لیگ قهرمانان اروپا",
-   "minute": 65,
-   "since": 1795551852.84925
-  }
- },
- "offset": 883795914,
+ "last_poll": 1795558775.91781,
+ "live": {},
+ "offset": 883795925,
  "posts": [],
  "schedule": {
   "date": "2026-11-24",
@@ -82,37 +18,37 @@
     "kickoff": 1795542300
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635611,
     "kickoff": 1795550400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635649,
     "kickoff": 1795550400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635663,
     "kickoff": 1795550400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635692,
     "kickoff": 1795550400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635713,
     "kickoff": 1795550400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635715,
     "kickoff": 1795550400
    },
    {
-    "done": false,
+    "done": true,
     "id": 1635731,
     "kickoff": 1795550400
    }
@@ -401,10 +337,17 @@
   9250,
   9251,
   9252,
-  9253
+  9253,
+  9265,
+  9266,
+  9267,
+  9268,
+  9269,
+  9270,
+  9271
  ],
  "usage": {
   "date": "2026-11-24",
-  "n": 14
+  "n": 22
  }
 }
