@@ -5,52 +5,52 @@
  "offset": 883795925,
  "posts": [],
  "schedule": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "matches": [
    {
-    "done": true,
-    "id": 1635641,
-    "kickoff": 1795542300
+    "done": false,
+    "id": 1635718,
+    "kickoff": 1795628700
    },
    {
-    "done": true,
-    "id": 1635667,
-    "kickoff": 1795542300
+    "done": false,
+    "id": 1635728,
+    "kickoff": 1795628700
    },
    {
-    "done": true,
-    "id": 1635611,
-    "kickoff": 1795550400
+    "done": false,
+    "id": 1635625,
+    "kickoff": 1795636800
    },
    {
-    "done": true,
-    "id": 1635649,
-    "kickoff": 1795550400
+    "done": false,
+    "id": 1635642,
+    "kickoff": 1795636800
    },
    {
-    "done": true,
-    "id": 1635663,
-    "kickoff": 1795550400
+    "done": false,
+    "id": 1635673,
+    "kickoff": 1795636800
    },
    {
-    "done": true,
-    "id": 1635692,
-    "kickoff": 1795550400
+    "done": false,
+    "id": 1635682,
+    "kickoff": 1795636800
    },
    {
-    "done": true,
-    "id": 1635713,
-    "kickoff": 1795550400
+    "done": false,
+    "id": 1635703,
+    "kickoff": 1795636800
    },
    {
-    "done": true,
-    "id": 1635715,
-    "kickoff": 1795550400
+    "done": false,
+    "id": 1635724,
+    "kickoff": 1795636800
    },
    {
-    "done": true,
-    "id": 1635731,
-    "kickoff": 1795550400
+    "done": false,
+    "id": 1635735,
+    "kickoff": 1795636800
    }
   ]
  },
@@ -347,7 +347,7 @@
   9271
  ],
  "usage": {
-  "date": "2026-11-24",
-  "n": 22
+  "date": "2026-11-25",
+  "n": 1
  }
 }
